@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mesi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="nav-bar">
+            <li class="suma"><a href="#suma">Suma</a></li>
+            <li class="p"><a href="#Change colour">Change colour</a></li>
+            <li class="a"><a href="#Triangle">Triangle</a></li>
+            <li class="a"><a href="#Click">Click!</a></li>
+
+        </ul>
+
+        <div class="logo-container">
+            <img src="logo.jpg" alt="Лого" class="logo">
+            <div class="author-info">
+                <p>Унгурян Ніколай 201 б група 2 курс, не вміє писати код.</p>
+                <img src="Myphoto.jpg" alt="Автор" class="author-photo">
+                <p>Автор: Унгурян Ніколай</p>
+            </div>
+        </div>
+    </nav>
+    <section id="suma">
+        <div class="container">
+            <div class="content-block">
+                <section id="suma">
+                    <h2>Сума і добуток цифр числа</h2>
+                    <input type="number" id="numberInput" placeholder="Введіть число">
+                    <button onclick="calculate()">Обчислити</button>
+                    <p id="result"></p>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+
+
+    <section id="Change colour">
+        <button class="changec" onclick="changeColor()">Змінити колір</button>
+        <script src="script2.js"></script>
+    </section>
+
+
+
+    <div class="trikut">
+        <section id="Triangle">
+            <div class=" input-string">
+                <label for="a">Сторона A:</label>
+                <input id="a" type="number" placeholder="Введіть A">
+                <label for="b">Сторона B:</label>
+                <input id="b" type="number" placeholder="Введіть B">
+                <label for="c">Сторона C:</label>
+                <input id="c" type="number" placeholder="Введіть C">
+                <button onclick="checkTriangle()">Перевірити</button>
+                <p id="triangleResult"></p>
+            </div>
+    </div>
+    </section>
+    <script src="script3.js"></script>
+
+
+
+    <div class="button-click">
+        <section id="Click">
+            <h1>Клікни на кнопку!</h1>
+            <button id="clickButton">Клікни мене!</button>
+            <p>Кількість натискань: <span id="clickCount">0</span></p>
+    </div>
+    </section>
+
+    <script src="script4.js"></script>
+</body>
+
+</html>
